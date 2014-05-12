@@ -1,0 +1,35 @@
+body{
+  background: #fdfdfd;
+  font-family: Arial, sans-serif;
+}
+
+/* Links */
+
+a{
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #000;
+  text-decoration: underline;
+}
+
+#main-content{
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+footer{
+  text-align: center;
+}
+
+footer ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer ul li a{
+  font-size: .9em;
+}
