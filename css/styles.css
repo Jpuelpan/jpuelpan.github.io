@@ -24,6 +24,10 @@ h2{
   text-transform: uppercase;
 }
 
+::selection{
+  background: #A9DAFF;
+}
+
 /* Main Content */
 
 #main-content{
@@ -33,6 +37,7 @@ h2{
 
 #main-content article{
   margin-bottom: 3em;
+  position: relative;
 }
 
 #main-content p{
