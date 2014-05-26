@@ -35,6 +35,12 @@ h2{
   max-width: 600px;
 }
 
+header h1{
+  text-align: center;
+  font-family: 'Helvetica';
+  font-weight: 100;
+}
+
 #main-content article{
   margin-bottom: 3em;
   position: relative;
