@@ -1,9 +1,7 @@
 body{
-  background: #fdfdfd;
+  background: #F5F7FA;
   font-family: Arial, sans-serif;
 }
-
-/* Links */
 
 a{
   color: #333;
@@ -15,53 +13,41 @@ a:hover{
   text-decoration: underline;
 }
 
-/* Headers */
-
-h2{
-  border-bottom: 1px solid #efefef;
-  font-weight: 100;
-  font-size: 1.1em;
-  text-transform: uppercase;
-}
-
 ::selection{
-  background: #A9DAFF;
+  background: #4FC1E9;
 }
 
-/* Main Content */
-
-#main-content{
-  margin: 0 auto;
-  max-width: 600px;
+header{
+  padding: 10em 0;
 }
 
 header h1{
   text-align: center;
   font-family: 'Helvetica';
+  font-size: 3.5em;
   font-weight: 100;
-}
-
-#main-content article{
-  margin-bottom: 3em;
-  position: relative;
-}
-
-#main-content p{
   line-height: 1.5em;
+  margin: 0;
 }
 
-#main-content .social{
+header span{
+  display: block;
+  /*font-size: 2em;*/
+  text-align: center;
+}
+
+.social{
   margin: 0;
   text-align: center;
 }
 
-#main-content .social li{
+.social li{
   display: inline-block;
   margin: 0 1em;
   padding: 1.5em 0;
 }
 
-#main-content .social li a{
+.social li a{
   color: #777;
   display: block;
   font-size: 2em;
@@ -69,14 +55,12 @@ header h1{
   text-align: center;
 }
 
-#main-content .social li a:hover{
+.social li a:hover{
   color: #000;
 }
 
-/* Footer */
-
 footer{
-  border-top: 1px solid #dfdfdf;
+  border-top: 1px solid #E6E9ED;
   margin-top: 3em;
   text-align: center;
 }
@@ -93,10 +77,4 @@ footer ul li{
 
 footer ul li a{
   font-size: .9em;
-}
-
-@media(max-width: 700px){
-  #main-content{
-    padding: 0 1em;
-  }
 }
