@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Inria+Serif:300i,400,700&display=swap');
+
 body{
   background: #010D00;
   color: #ccc;
@@ -23,6 +25,7 @@ header{
 }
 
 header h1{
+  color: #ffffff;
   text-align: center;
   font-family: 'Helvetica';
   font-size: 3.5em;
@@ -77,3 +80,46 @@ footer ul li{
 footer ul li a{
   font-size: .9em;
 }
+
+#quotes{
+  /*border: 1px solid #00adef;*/
+  margin: 0 auto;
+  margin-top: 2em;
+  max-width: 920px;
+}
+
+#quotes h1{
+  font-family: 'Inria Serif', serif;
+  text-align: center;
+}
+
+#quotes blockquote{
+  border-left: 5px solid #d0d0d0;
+  padding: 1em;
+  padding-left: 1.5em;
+  margin: 2em 1em;
+}
+
+#quotes blockquote:hover{
+  background: #2C2C2C;
+  color: #fff;
+}
+
+#quotes blockquote p{
+  font-size: 1.4rem;
+  font-family: 'Inria Serif', serif;
+  /*font-weight: 400;*/
+  font-style: italic;
+  /*text-align: justify;*/
+  margin: 0;
+}
+
+#quotes blockquote span{
+  display: block;
+  font-family: 'Inria Serif', serif;
+  font-size: 1.2em;
+  margin-top: 1em;
+  font-style: italic;
+  text-align: right;
+}
+
