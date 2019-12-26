@@ -1,20 +1,21 @@
 body{
-  background: #F5F7FA;
+  background: #010D00;
+  color: #ccc;
   font-family: Arial, sans-serif;
 }
 
 a{
-  color: #333;
+  color: #aaa;
   text-decoration: none;
 }
 
 a:hover{
-  color: #000;
+  color: #fff;
   text-decoration: underline;
 }
 
 ::selection{
-  background: #4FC1E9;
+  background: #833BFF;
 }
 
 header{
@@ -32,7 +33,6 @@ header h1{
 
 header span{
   display: block;
-  /*font-size: 2em;*/
   text-align: center;
 }
 
@@ -48,7 +48,7 @@ header span{
 }
 
 .social li a{
-  color: #777;
+  color: #cccccc;
   display: block;
   font-size: 2em;
   min-width: 1.4em;
@@ -56,11 +56,10 @@ header span{
 }
 
 .social li a:hover{
-  color: #000;
+  color: #fff;
 }
 
 footer{
-  border-top: 1px solid #E6E9ED;
   margin-top: 3em;
   text-align: center;
 }
