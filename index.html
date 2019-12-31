@@ -9,13 +9,16 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  
+
   <section id="main-content">
 
     <header>
       <h1>Juan Puelpan</h1>
       <span>Web Developer</span>
     </header>
+
+    <div id="quote">
+    </div>
 
     <ul class="social">
       <li>
@@ -66,6 +69,9 @@
         <li>
           <a href="https://github.com/Jpuelpan/jpuelpan.github.io" target="_blank">Hosted on Github Pages</a>
         </li>
+        <li>
+          <a href="/quotes/">Quotes</a>
+        </li>
       </ul>
     </footer>
   </section>
@@ -77,6 +83,16 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-50867914-1', 'auto');
     ga('send', 'pageview');
+  </script>
+
+  <script>
+    fetch('/quotes/quotes.json')
+      .then(response => response.json())
+      .then(items => {
+        const item = items[Math.floor(Math.random()*items.length)];
+        document.querySelector('#quote').innerHTML = `"${item.body}"<br/> <br/> ${item.author}, ${item.originName}`
+        console.log(item);
+      })
   </script>
 
 </body>

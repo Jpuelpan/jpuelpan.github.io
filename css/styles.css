@@ -21,7 +21,7 @@ a:hover{
 }
 
 header{
-  padding: 10em 0;
+  padding: 5em 0;
 }
 
 header h1{
@@ -37,6 +37,17 @@ header h1{
 header span{
   display: block;
   text-align: center;
+}
+
+#quote{
+  text-align: center;
+  font-family: 'Inria Serif', serif;
+  font-style: italic;
+  font-size: 1.1em;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 2em 0;
+  padding-bottom: 4em;
 }
 
 .social{
