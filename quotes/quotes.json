@@ -1213,5 +1213,23 @@
     "originName": "Fahrenheit 451",
     "author": "Ray Bradbury",
     "url": ""
+  },
+  {
+    "id": "",
+    "body": "No es eso. Todo lo que ha constituido y constituye tu vida es falso; un engaño que te impide ver la vida y la muerte.",
+    "createdAt": 0,
+    "origin": "Book",
+    "originName": "La muerte de Iván Ilich",
+    "author": "León Tolstói",
+    "url": ""
+  },
+  {
+    "id": "",
+    "body": "-¡Se acábo!- dijo alguien próximo a él. Ivan Ilich escuchó estas palabras y las repitió en su alma. \"Se acabó la muerte - se dijo. La muerte ya no existe\". Inspiró, se detuvo a la mitad, se estiró y murió.",
+    "createdAt": 0,
+    "origin": "Book",
+    "originName": "La muerte de Iván Ilich",
+    "author": "León Tolstói",
+    "url": ""
   }
 ]
