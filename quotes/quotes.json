@@ -118,7 +118,7 @@
   },
   {
     "id": "",
-    "body": "¿Quién sabe si los paisajes de mi sueños no serán si no mi modo de no soñarte? No sé quién eres, pero ¿acaso sé quién soy yo?",
+    "body": "¿Quién sabe si los paisajes de mis sueños no serán si no mi modo de no soñarte? No sé quién eres, pero ¿acaso sé quién soy yo?",
     "createdAt": 0,
     "origin": "Book",
     "originName": "Libro del Desasosiego",
@@ -1230,6 +1230,24 @@
     "origin": "Book",
     "originName": "La muerte de Iván Ilich",
     "author": "León Tolstói",
+    "url": ""
+  },
+  {
+    "id": "",
+    "body": "Ningún hombre puede bañarse dos veces en el mismo río, pues a la segunda vez el río ya no es el mismo, como tampoco lo es el hombre.",
+    "createdAt": 0,
+    "origin": "Book",
+    "originName": "",
+    "author": "Heráclito",
+    "url": ""
+  },
+  {
+    "id": "",
+    "body": "- Me estoy muriendo - dijo Juliana. - No es más que una crisis de ansiedad. ¿No las tienes todo el día?",
+    "createdAt": 0,
+    "origin": "Book",
+    "originName": "El hombre en el castillo",
+    "author": "Philip K. Dick",
     "url": ""
   }
 ]
