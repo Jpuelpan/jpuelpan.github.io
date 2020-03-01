@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Lacquer&display=swap');
+
+body{
+  background: #000;
+  color: #FFF;
+  /*font-family: 'Helvetica Neue';*/
+  font-family: 'Lacquer';
+}
+
+h1{
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.counter{
+  text-align: center;
+  font-size: 4em;
+}
+
+.calendar-wrap{
+
+}
+
+.calendar-wrap .calendar{
+  padding: 1em;
+}
+
+.calendar-wrap .calendar .point{
+  background: #FFF;
+  display: inline-block;
+  margin: .15em;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.calendar-wrap .calendar .point.lived{
+  background: #666;
+}
+
+.calendar-wrap .calendar .point.current{
+  background: #00adef;
+}
+
+.calendar-wrap .calendar .point.tolive{
+  background: #999;
+}
+
+.calendar-wrap .calendar .point.highlight{
+  background: #FFF;
+}
+

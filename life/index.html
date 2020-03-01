@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Life</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/life.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</head>
+<body>
+  <div class="counter" id="WeeksAlive"></div>
+
+  <div class="calendar-wrap">
+    <div id="calendar" class="calendar">
+    </div>
+  </div>
+
+  <div class="counter" id="WeeksRemaining"></div>
+
+  <script>
+    const dob = moment('1993-11-11');
+    const years = [30, 35, 40, 45, 50, 55, 60, 65, 70];
+
+    let weeksAlive = moment().diff(dob, 'weeks');
+    document.getElementById('WeeksAlive').innerHTML = `${weeksAlive} weeks alive`;
+
+    let weeksRemaining = dob.clone().add(years[years.length - 1], 'years').diff(moment(), 'weeks')
+    document.getElementById('WeeksRemaining').innerHTML = `${weeksRemaining} weeks to die`;
+
+    let calendar = document.getElementById('calendar');
+
+    for(let i = 0; i <= weeksAlive; i++){
+      if( i === weeksAlive ){
+        calendar.insertAdjacentHTML('beforeend', '<div class="point current"></div>')
+      }else{
+        calendar.insertAdjacentHTML('beforeend', '<div class="point lived"></div>')
+      }
+    }
+
+    let lastDate = moment().clone();
+
+    years.forEach(year => {
+      const weeks = dob.clone().add(year, 'years').diff(lastDate, 'weeks')
+      lastDate = dob.clone().add(year, 'years')
+
+      for(let i = 0; i <= weeks; i++){
+        if( i === weeks ){
+          calendar.insertAdjacentHTML('beforeend', '<div class="point highlight"></div>')
+        }else{
+          calendar.insertAdjacentHTML('beforeend', '<div class="point tolive"></div>')
+        }
+      }
+    })
+  </script>
+</body>
+</html>
