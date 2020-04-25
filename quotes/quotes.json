@@ -1060,5 +1060,23 @@
     "origin": "Book",
     "originName": "Artificial Condition",
     "author": "Martha Wells"
+  },
+  {
+    "body": "(There needs to be an error code that means “I received your request but decided to ignore you.”)",
+    "origin": "Book",
+    "originName": "Rogue Protocol",
+    "author": "Martha Wells"
+  },
+  {
+    "body": "I signaled Miki I would be withdrawing for one minute. I needed to have an emotion in private.",
+    "origin": "Book",
+    "originName": "Rogue Protocol",
+    "author": "Martha Wells"
+  },
+  {
+    "body": "I was having an emotion again. An angry one.",
+    "origin": "Book",
+    "originName": "Rogue Protocol",
+    "author": "Martha Wells"
   }
 ]
