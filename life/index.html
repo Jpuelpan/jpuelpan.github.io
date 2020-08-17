@@ -25,7 +25,7 @@
     document.getElementById('WeeksAlive').innerHTML = `${weeksAlive} weeks alive`;
 
     let weeksRemaining = dob.clone().add(years[years.length - 1], 'years').diff(moment(), 'weeks')
-    document.getElementById('WeeksRemaining').innerHTML = `${weeksRemaining} weeks to die`;
+    document.getElementById('WeeksRemaining').innerHTML = `${weeksRemaining} weeks (or less) to die`;
 
     let calendar = document.getElementById('calendar');
 
