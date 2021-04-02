@@ -1288,5 +1288,17 @@
     "origin": "Song",
     "originName": "Sleepless",
     "author": "deadmau5"
+  },
+  {
+    "body": "Cuanto más conozco el mundo, más me irrita, y todos los días confirmo mi creencia en la inconstancia del carácter humano y en la poca que me inspiran las apariencias de mérito o talento.",
+    "origin": "Book",
+    "originName": "Orgullo y prejuicio",
+    "author": "Jane Austen"
+  },
+  {
+    "body": "No podía escribirle sin advertir que había desaparecido entre ellas la confianza que nace de la amistad sincera, y aun cuando decidió que seguiría escribiéndole, lo hacía en atención a lo que su amistad había sido, no a lo que era.",
+    "origin": "Book",
+    "originName": "Orgullo y prejuicio",
+    "author": "Jane Austen"
   }
 ]
