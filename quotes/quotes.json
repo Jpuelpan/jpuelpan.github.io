@@ -1720,5 +1720,11 @@
     "origin": "Book",
     "originName": "Diario de un hombre superfluo",
     "author": "Ivan Turgenev"
+  },
+  {
+    "body": "No sé si debería ser así, pero la verdad es que las tonterías dejan de ser tontas cuando las hace la gente sensata de un modo desvergonzado. La maldad siempre es maldad, pero la locura no siempre es locura. Depende del carácter de quienes la manejan.",
+    "origin": "Book",
+    "originName": "Emma",
+    "author": "Jane Austen"
   }
 ]
