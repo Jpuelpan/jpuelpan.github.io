@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Juan Puelpan - Web Developer</title>
+  <title>Juan Puelpan - Software Developer</title>
   <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/fontawesome.min.css">
+  <link rel="stylesheet" href="/css/brands.min.css">
+  <link rel="stylesheet" href="/css/solid.min.css">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
@@ -14,85 +16,84 @@
 
     <header>
       <h1>Juan Puelpan</h1>
-      <span>Web Developer</span>
+      <span>Software Developer</span>
     </header>
-
-    <div id="quote">
-    </div>
 
     <ul class="social">
       <li>
         <a href="https://github.com/Jpuelpan" title="Github" target="_blank">
-          <span class="fa fa-github-alt"></span>
+          <span class="fa-brands fa-github-alt"></span>
         </a>
       </li>
 
       <li>
-        <a href="mailto:juan@puelpan.com" title="Email" target="_blank">
-          <span class="fa fa-envelope-o"></span>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://facebook.com/puelpan" title="Facebook" target="_blank">
-          <span class="fa fa-facebook"></span>
+        <a href="https://instagram.com/estaihelaojuan" title="Linkedin" target="_blank">
+          <span class="fa-brands fa-instagram"></span>
         </a>
       </li>
 
       <li>
         <a href="https://open.spotify.com/user/12125975552" title="Spotify" target="_blank">
-          <span class="fa fa-spotify"></span>
+          <span class="fa-brands fa-spotify"></span>
         </a>
       </li>
 
       <li>
-        <a href="http://steamcommunity.com/id/anunnakis2012/" title="Steam" target="_blank">
-          <span class="fa fa-steam"></span>
+        <a href="https://cl.linkedin.com/in/juanpuelpan" title="Linkedin" target="_blank">
+          <span class="fa-brands fa-linkedin"></span>
         </a>
       </li>
 
       <li>
-        <a href="http://cl.linkedin.com/in/juanpuelpan" title="Linkedin" target="_blank">
-          <span class="fa fa-linkedin"></span>
+        <a href="https://www.librarything.com/catalog/jpuelpan/currentlyreading" title="Github" target="_blank">
+          <span class="fa-solid fa-book"></span>
         </a>
       </li>
 
       <li>
-        <a href="https://twitter.com/Jpuelpan" title="Twitter" target="_blank">
-          <span class="fa fa-twitter"></span>
+        <a href="mailto:juan@puelpan.com" title="Linkedin" target="_blank">
+          <span class="fa-solid fa-envelope"></span>
         </a>
       </li>
     </ul>
 
-    <footer>
-      <ul>
-        <li>
-          <a href="https://github.com/Jpuelpan/jpuelpan.github.io" target="_blank">Hosted on Github Pages</a>
-        </li>
-        <li>
-          <a href="/quotes/">Quotes</a>
-        </li>
-      </ul>
-    </footer>
+    <div style="text-align: center;">
+      <p>Here is a random quote from a book that I've read. <br/> Click <a href="javascript: randomQuote();">here</a> to get another one, or <a href="/quotes">here</a> to see them all.</p>
+    </div>
+
+    <div id="quote">
+    </div>
   </section>
 
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-50867914-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+    let quotes = []
 
-  <script>
-    fetch('/quotes/quotes.json')
-      .then(response => response.json())
-      .then(items => {
-        const item = items[Math.floor(Math.random()*items.length)];
-        document.querySelector('#quote').innerHTML = `"${item.body}"<br/> <br/> ${item.author}, ${item.originName}`
-        console.log(item);
-      })
+    function randomQuote(){
+      const item = quotes[Math.floor(Math.random()*quotes.length)]
+      let quote = `"${item.body}"<br/><br/> ${item.author}`
+
+      if( item.originName ){
+        quote = `${quote}, ${item.originName}`
+      }
+
+      document.querySelector('#quote').innerHTML = quote
+    }
+
+    async function main(){
+      async function fetchQuotes(){
+        const res = await fetch('/quotes/quotes.json')
+        if(res.status === 200){
+          return res.json()
+        }else{
+          return []
+        }
+      }
+
+      quotes = await fetchQuotes()
+      randomQuote()
+    }
+
+    main()
   </script>
 
 </body>
